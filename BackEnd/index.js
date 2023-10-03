@@ -27,9 +27,9 @@ dotenv.config();
 main().catch((err) => console.log(err));
 
 async function main() {
-  await mongoose.connect(process.env.mongo_url, {
-    dbName: "hospitalmanagementdb",
-  });
+  await mongoose.connect("mongodb+srv://alikhaninfo125:ali123@cluster0.lkgxkkh.mongodb.net/?retryWrites=true&w=majority")
+  //   dbName: "hospitalmanagement",
+  // });
 
   console.log("database conntected");
 }
